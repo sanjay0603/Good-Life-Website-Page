@@ -1,0 +1,268 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+ }
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+ h1 {
+    font-size: 46px;
+    font-weight: 900;
+ }
+ h1:hover {
+    color: #ef800d;
+    cursor: pointer;
+ }
+ h2 {
+    font-size: 52px;
+    font-weight: 700;
+ }
+ 
+ h3 {
+    font-size: 26px;
+    font-weight: bold;
+ }
+ h6 {
+    color: #ef800d;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+ }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+ header {
+    background-image: url("../Images/headerback.jpg");
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 30px;
+ }
+ 
+ .navbar .collapse .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    color: black;
+    font-size: 25px;
+ }
+ .navbar-nav .nav-item .nav-link:hover {
+    border: 1px solid black;
+ }
+ .headersection strong {
+    font-size: 30px;
+    font-weight: 900;
+ }
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+ .banner {
+    padding: 40px 80px 66px;
+    background: white;
+    opacity: 0.9;
+    margin: auto;
+    max-width: 96%;
+    height: fit-content;
+ }
+ .btn {
+    padding: 9px 22px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ef800d;
+ }
+ h2:hover {
+     cursor: pointer;
+    color: #ef800d;
+ }
+ 
+ .goodfoodpara {
+    position: relative;
+    margin-top: 11px;
+    padding-top: 60px;
+    font-size: 15px;
+ }
+ 
+ .goodfoodpara:before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 90px;
+    border: 2px solid;
+    top: 0;
+    left: 0;
+    margin-top: 24px;
+ }
+ 
+ .btn1 {
+   padding: 8px 22px;
+   color: #fff;
+   border: transparent;
+   font-size: 18px;
+   background-color: #749c07;
+   border-radius: 0;
+ }
+ .icon {
+    padding-left: 12px;
+    font-size: 19px;
+ }
+ .btn1:hover {
+    color: white;
+    background-color: #ef800d;
+ }
+/*--------------------------------------------------------------
+# Recipe
+--------------------------------------------------------------*/
+ .recipe {
+    background-image: url("../Images/pic3.jpg");
+ }
+ .recipepara {
+    position: relative;
+    margin-top: 11px;
+    padding-top: 60px;
+ }
+ 
+ .recipepara::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    border: 2px solid #749c07;
+    top: 0;
+    left: 44%;
+    margin-top: 24px;
+ }
+ .bordersection {
+    background-color: white;
+    height: auto;
+ }
+ .icon-fill-madison {
+    fill: #749c07;
+ }
+ .heading6 {
+    color: black;
+ }
+/*--------------------------------------------------------------
+# Watch-Section
+--------------------------------------------------------------*/
+ .watchsection {
+    background-image: url("../Images/bakcground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+ }
+ .heading1 {
+    font-size: 60px;
+    color: white;
+ }
+ .btn2 {
+    padding: 12px 26px;
+    border: 1px transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ef800d;
+ }
+ .btn2:hover {
+    background-color: white;
+    color: #ef800d;
+ }
+ 
+/*--------------------------------------------------------------
+# Lates-Recipe
+--------------------------------------------------------------*/
+ .innertext {
+    text-align: left;
+    padding-left: 26px;
+ }
+ 
+ .icon2 {
+    color: #ef800d;
+ }
+ .maindiv {
+    background-color: #2e2f2f;
+ }
+ .text {
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+ }
+ .timing {
+    font-weight: bold;
+ }
+ .btnrecipe {
+    font-size: 18px;
+    padding: 14px 25px;
+    background-color: #749c07;
+    color: white;
+    border: transparent;
+    font-weight: 700;
+ }
+ .btnrecipe:hover {
+    background-color: #ef800d;
+ }
+ 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+ footer {
+    background-color: #f5f7fa;
+ }
+ .footericon ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+ }
+ .footericon ul li {
+    background-color: #e5e5e5;
+    font-size: 22px;
+    padding: 4px 11px;
+    margin-left: 18px;
+    transform: rotate(40deg);
+ }
+ .footericon {
+    color: #749c07;
+ }
+ .footericon ul li a {
+    text-decoration: none;
+    color: #888888;
+ }
+ .footericon ul li i {
+    transform: rotate(-40deg);
+ }
+ .footerbtn {
+    padding: 6px 15px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ef800d;
+    border: transparent;
+ }
+
+/*--------------------------------------------------------------
+# Media-Query
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px){
+   .typed-out{
+     overflow: hidden;
+     border-right:.15em solid #ef800d;
+     white-space:nowrap;
+     animation: typing 3s steps(50, end) forwards infinite, blinking .60s infinite;
+     width: 0;
+   }
+   @keyframes typing {
+     from { width: 0 }
+     to { width: 85% }
+   }
+   @keyframes blinking {
+     from { border-color: transparent }
+     to { border-color: #ef800d; }
+   }
+  }
+ @media screen and (max-width: 768px) {
+    .footerdiv iframe {
+       width: 340px;
+    }
+    .recipepara::before {
+       left: 36%;
+    }
+   }
+   
